@@ -2,53 +2,309 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>稼働履歴</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>稼働履歴</title>
+
+<link rel="stylesheet" type="text/css" href="../static/css/common.css">
+<link rel="stylesheet" type="text/css"
+	href="../static/css/operation-history.css">
+
 </head>
-<h1>稼働履歴</h1>
-<table>
-  <tbody>
-    <tr>
-      <th>
-        <a href="operation-input-form.html">11/1(月)</a>
-      </th>
-      <th>
-        <a href="operation-input-form.html">11/2(火)</a>
-      </th>
-      <th>
-        <a href="operation-input-form.html">11/3(水)</a>
-      </th>
-      <th>
-        <a href="operation-input-form.html">11/4(木)</a>
-      </th>
-      <th>
-        <a href="operation-input-form.html">11/5(金)</a>
-      </th>
-      <th>
-        <a href="operation-input-form.html">11/6(土)</a>
-      </th>
-      <th>
-        <a href="operation-input-form.html">11/6(日)</a>
-      </th>
-      <th>週間合計</th>
-    </tr>
-    <!-- TODO:ツールチップを作りたい -->
-    <!-- TODO:ツールチップで各タスク別の時間が表示される -->
-    <tr>
-      <td>7.5</td>
-      <td>7.5</td>
-      <td>7.5</td>
-      <td>8.5</td>
-      <td>7.5</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
 
 <body>
+	<main>
+		<h1>稼働履歴</h1>
+
+		<table>
+			<caption>
+				<a href="#" data-micromodal-trigger="detail-modal">&lt;</a> <span>n月</span>
+				<a href="#" data-micromodal-trigger="detail-modal">&gt;</a>
+			</caption>
+			<thead>
+				<tr>
+					<th class="day-of-week mon">月</th>
+					<th class="day-of-week tue">火</th>
+					<th class="day-of-week wed">水</th>
+					<th class="day-of-week thu">木</th>
+					<th class="day-of-week fri">金</th>
+					<th class="day-of-week sat">土</th>
+					<th class="day-of-week sun">日</th>
+					<th class="sum">週間合計</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">1</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">2</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">3</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">4</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">5</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">6</a>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">7</a>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>37.5</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">8</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">9</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">10</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">11</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">12</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">13</a>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">14</a>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>37.5</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">15</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">16</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">17</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">18</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">19</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">20</a>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">21</a>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>37.5</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">22</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">23</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">24</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">25</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">26</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">27</a>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">28</a>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>37.5</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">29</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<a href="#" data-micromodal-trigger="detail-modal">30</a>
+							<p>7.5</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>-</p>
+						</div>
+					</td>
+					<td>
+						<div>
+							<p>15.0</p>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+	<article>
+		<div id="detail-modal" aria-hidden="true" class="modal">
+			<div tabindex="-1" data-micromodal-close class="overlay">
+				<div role="dialog" aria-modal="true" class="container">
+					<header class="detail_header">
+						<h2 id="detail-modal-title" class="detail-modal-title">n/n(d)</h2>
+						<button data-micromodal-close class="detail_close"></button>
+					</header>
+					<main>
+						<h1>ああああああ</h1>
+					</main>
+
+					<footer></footer>
+				</div>
+			</div>
+		</div>
+
+	</article>
+
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+	<script>
+		MicroModal.init({
+			disableScroll : true,
+			awaitOpenAnimation : true,
+			awaitCloseAnimation : true
+		});
+	</script>
 
 </body>
 
