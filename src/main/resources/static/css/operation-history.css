@@ -93,3 +93,52 @@ table, td, th {
 .modal .overlay {
   will-change: transform;
 }
+
+.second-modal {
+  display: none;
+}
+
+.second-modal.is-open {
+  display: block;
+}
+
+.second-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-container {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.second-detail_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-detail_close {
+  background: transparent;
+  border: 0;
+}
+
+.second-detail_header .second-detail_close:before { content: "\2715"; }
+
+
+.second-modal .second-container,
+.second-modal .second-overlay {
+  will-change: transform;
+}

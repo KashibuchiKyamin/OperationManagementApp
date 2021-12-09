@@ -37,7 +37,7 @@
 				<tr>
 					<td>
 						<div>
-							<a href="#" data-micromodal-trigger="detail-modal">1</a>
+							<button onclick="myOpen()">1</button>
 							<p>7.5</p>
 						</div>
 					</td>
@@ -283,27 +283,53 @@
 				<div role="dialog" aria-modal="true" class="container">
 					<header class="detail_header">
 						<h2 id="detail-modal-title" class="detail-modal-title">n/n(d)</h2>
-						<button data-micromodal-close class="detail_close"></button>
+						<button class="detail_close" onclick="myClose()"></button>
 					</header>
 					<main>
 						<h1>ああああああ</h1>
+						<button onclick="myOpenSecond()"></button>
 					</main>
 
 					<footer></footer>
 				</div>
 			</div>
 		</div>
+	</article>
 
+	<article>
+		<div id="second-modal" aria-hidden="true" class="second-modal">
+			<div tabindex="-1" data-micromodal-close class="second-overlay">
+				<div role="dialog" aria-modal="true" class="second-container">
+					<header class="second-detail_header">
+						<h2 id="second-modal-title" class="second-modal-title">n/n(d)</h2>
+						<button data-micromodal-close class="second-detail_close"></button>
+					</header>
+					<main>
+						<h1>いいいいいいい</h1>
+						<button onclick="myCloseSecond()"></button>
+					</main>
+
+					<footer></footer>
+				</div>
+			</div>
+		</div>
 	</article>
 
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 	<script>
-		MicroModal.init({
-			disableScroll : true,
-			awaitOpenAnimation : true,
-			awaitCloseAnimation : true
-		});
+		function myOpen() {
+			MicroModal.show('detail-modal'); // [1]
+		}
+		function myClose() {
+			MicroModal.close('detail-modal'); // [2]
+		}
+		function myOpenSecond() {
+			MicroModal.show('second-modal'); // [1]
+		}
+		function myCloseSecond() {
+			MicroModal.close('second-modal'); // [2]
+		}
 	</script>
 
 </body>
